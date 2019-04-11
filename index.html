@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <title>Test task#1</title>
+</head>
+<body>
+<div class="container">
+    <div class="top-menu">
+        <nav class="top-menu__nav">
+            <ul class="top-menu__list">
+                <li class="top-menu__item"><a href="#" class="top-menu__link">Каталог товаров</a></li>
+                <li class="top-menu__item"><a href="#" class="top-menu__link">Вязание на заказ</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="top-menu__logo"></a>
+        <img src="./img/logo-mobile.svg" alt="logo" class="top-menu__logo-mobile">
+        <a href="#" class="menu" id="responsive"><img src="img/menu.svg.png" alt=""></a>
+        <div class="responsive__menu">
+            <ul class="responsive__list">
+                <li class="responsive__item top-menu__item">Каталог товаров</li>
+                <li class="responsive__item top-menu__item">Вязание на заказ</li>
+                <li class="responsive__item top-menu__item"><img src="img/search.svg.png" alt="search" class="responsive__img"> Поиск по сайту</li>
+                <li class="responsive__item top-menu__item"><img src="img/cart.svg.png" alt="cart" class="responsive__img"> Корзина: пока пуста</li>
+            </ul>
+        </div>
+        <form action="#" class="top-menu__form">
+            <input type="text" class="top-menu__input">
+            <button class="top-menu__search"></button>
+        </form>
+    </div>
+</div>
+<header>
+    <div class="container">
+        <div class="header">
+            <h1 class="header__title">Милые штуки ручной
+                работы для дома</h1>
+            <a class="header__button header__button-first">
+                <p class="header__text">Предметы
+                    интереьера</p>
+                <img src="./img/interior.svg.svg" alt="interior" class="header__icon">
+            </a>
+            <a class="header__button header__button-second">
+                <p class="header__text">Детские
+                    игрушки</p>
+                <img src="./img/toy-svg.svg" alt="toy" class="header__icon">
+            </a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="featured">
+            <h2 class="featured__title">Вязаные корзинки</h2>
+            <a href="" class="featured__link">товар недели</a>
+            <p class="featured__paragraph">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+                размерах.</p>
+            <table class="featured__table">
+                <tbody>
+                <tr class="featured__row">
+                    <th class="featured__header">Цвет:</th>
+                    <td class="featured__cell">«Тиффани»/серый</td>
+                </tr>
+                <tr class="featured__row">
+                    <th class="featured__header">Диаметр:</th>
+                    <td class="featured__cell">25см</td>
+                </tr>
+                <tr class="featured__row">
+                    <th class="featured__header">Высота:</th>
+                    <td class="featured__cell">15см</td>
+                </tr>
+                </tbody>
+            </table>
+            <img srcset="img/triple-set-mobile.svg 320w"
+                 sizes="(max-width: 320px)"
+                 alt="feature" class="featured__img">
+            <p class="featured__price">Цена: 990 руб.</p>
+            <a href="#" class="ghost__button" id="open-popup">заказать</a>
+        </div>
+        <div class="order__modal" id="order-popup">
+            <div class="order__content">
+                <h6 class="order__title">Добавить
+                    в корзину</h6>
+                <div class="order__sizes">
+                    <p class="order__header">Выберите размер:</p>
+                    <a href="#" class="order__size">s</a>
+                    <a href="#" class="order__size">m</a>
+                    <a href="#" class="order__size">l</a>
+                </div>
+                <a href="" class="order__add">добавить</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="breakline"></div>
+    <div class="container">
+        <div class="about">
+            <h3 class="about__header">Коротко о нас:</h3>
+            <div class="about__cards">
+                <img src="img/icon-1.png" alt="icon" class="about__img">
+                <p class="about__paragraph">Экологически
+                    чистые материалы</p>
+            </div>
+            <div class="about__cards">
+                <img src="img/icon-2.png" alt="icon" class="about__img">
+                <p class="about__paragraph">Скандинавский стиль
+                    по российской цене</p>
+            </div>
+            <div class="about__cards">
+                <img src="img/icon-3.png" alt="icon" class="about__img">
+                <p class="about__paragraph">Увеличивает лайки
+                    на фотографиях</p>
+            </div>
+            <div class="about__cards">
+                <img src="img/icon-4.png" alt="icon" class="about__img">
+                <p class="about__paragraph">Связано вручную с
+                    любовью и умилением</p>
+            </div>
+            <div class="about__cards">
+                <img src="img/icon-5.png" alt="icon" class="about__img">
+                <p class="about__paragraph">Поддержка отечественного производителя</p>
+            </div>
+            <div class="about__cards">
+                <img src="img/icon-6.png" alt="icon" class="about__img">
+                <p class="about__paragraph">Поставляется в
+                    подарочной упаковке</p>
+            </div>
+            <div class="about__reviews">
+                <h4 class="about__header">Отзывы</h4>
+                <p class="about__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+                    лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                    фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <p class="about__sign">Анастасия Красильникова <a href="#" class="about__link">@misssssiskras</a></p>
+                <ul class="about__buttons">
+                    <li class="about__button"><a href="" class="about__button-link"><img
+                            src="img/huge-arrow-left.svg.svg" alt="left arrow" class="about__arrow"></a></li>
+                    <li class="about__button"><a href="" class="about__button-link"><img
+                            src="img/huge-arrow-right.svg.svg" alt="right arrow" class="about__arrow"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="breakline"></div>
+    <div class="container">
+        <div class="contacts">
+            <h5 class="contacts__header">Контакты</h5>
+            <div class="contacts__item"><span class="contacts__info">e-mail:</span><a href="#" class="contacts__mail">
+                info@mimimishkashop.ru </a></div>
+            <div class="contacts__item"><span class="contacts__info">адрес:</span><span class="contacts__adres">г. Санкт-Петербург,
+            ул. Большая
+            Конюшенная,
+            д. 19/8, офис 101</span></div>
+            <a href="#" class="ghost__button contacts-ghost">написать</a>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.125211972576!2d30.31906106722344!3d59.93939977273232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554809590574!5m2!1sru!2sru"
+                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="contacts">
+            <a href="#" class="ghost__button contacts-ghost">напишите нам</a></div>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer">
+            <div class="footer__icons">
+                <a href="#" class="footer__icon footer__icon1"></a><a href="#" class="footer__icon footer__icon2"></a><a
+                    href="#" class="footer__icon footer__icon3"></a>
+            </div>
+            <a href="#" class="footer__copyright">
+                <h6 class="footer__title">Разработано</h6><span href="#" class="footer__icon footer__icon4"></span>
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

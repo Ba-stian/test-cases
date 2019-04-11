@@ -1,0 +1,362 @@
+@font-face
+  font-family: "Open Sans"
+  src: url('https://fonts.googleapis.com/css?family=Open+Sans')
+body
+  margin: 0
+  padding: 0
+  font-family: "Open Sans", sans-serif
+a
+  text-decoration: none
+ul
+  list-style-type: none
+
+@media screen and (max-width: 335px)
+  .container
+    width: 100%
+    height: 100%
+  .menu
+    align-self: center
+  .top-menu
+    border-top: 1px solid #ececec
+    border-bottom: 1px solid #ececec
+    padding: 0 9.375%
+    display: flex
+    &__list
+      display: none
+    &__form
+      display: none
+    &__logo-mobile
+      display: block
+      margin: 0 auto
+      padding-top: 22px
+      padding-bottom: 22px
+    &__item
+      color: #000000
+      font-size: 17px
+      font-weight: 700
+      line-height: 24px
+      display: inline-flex
+      padding: 30px 0
+  .responsive
+    &__menu
+      position: absolute
+      width: 100%
+      background-color: #ffffff
+      left: 0
+    &__list
+      padding: 0
+      text-align: center
+      display: flex
+      flex-direction: column
+      z-index: 100
+      width: 100%
+    &__item
+      display: inline-block
+      text-align: center
+    &__img
+      width: 21px
+      height: 18px
+      float: left
+      display: inline-block
+      padding-left: 10%
+
+  .header
+    background: url("../img/hero-mobile.svg") no-repeat top
+    &__title
+      margin: 0 auto
+      padding: 88px 20px 120px
+      height: 87px
+      color: #010000
+      font-size: 27px
+      font-weight: 700
+      line-height: 30px
+      text-align: center
+    &__button
+      padding: 30px 29px
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      height: 103px
+      &:hover
+        cursor: pointer
+        height: 108px
+        & .header__text, & .header__icon
+          padding-bottom: 5px
+      &:active
+        .header__text, & .header__icon
+          opacity: .4
+      &-first
+        background: #63d1bb
+      &-second
+        background: #56c3b2
+    &__text
+      margin: 0
+      color: #ffffff
+      font-size: 19px
+      font-weight: 700
+      line-height: 24px
+      display: flex
+      align-items: center
+      white-space: pre-line
+    &__icon
+      opacity: .6
+  .featured
+    padding: 0 9.375%
+    &__title
+      color: #000000
+      font-size: 25px
+      font-weight: 700
+      line-height: 30px
+      margin-top: 34px
+      margin-bottom: 8px
+      width: 100%
+    &__link
+      color: #63d1bb
+      font-size: 17px
+      font-weight: 700
+      line-height: 20px
+      text-transform: uppercase
+    &__paragraph
+      color: #444444
+      font-size: 15px
+      font-weight: 400
+      line-height: 24px
+      margin-top: 28px
+      margin-right: 11px
+    &__table
+      color: #444444
+      font-size: 15px
+      font-weight: 400
+      line-height: 20px
+      padding-bottom: 28px
+      width: 100%
+    &__header
+      text-align: left
+      font-weight: normal
+      display: inline-block
+      padding-right: 6.9%
+      padding-bottom: 8px
+    &__cell
+      text-align: left
+    &__row
+      box-shadow: 0 1px #ececec
+      padding-right: 38px
+    &__img
+      max-width: 100%
+    &__price
+      color: #444444
+      font-size: 17px
+      font-weight: 700
+      line-height: 24px
+      text-align: center
+  .ghost__button
+    color: #444444
+    font-size: 17px
+    font-weight: 700
+    line-height: 24px
+    text-transform: uppercase
+    text-align: center
+    display: block
+    padding: 10px 0
+    border: 3px solid #444444
+    &:hover
+      background: #444444
+      color: #ffffff
+    &:active
+      color: #767676
+  .breakline
+    background: url("../img/zigzag-line-desktop.svg.svg") no-repeat center
+    width: 100%
+    padding: 25px 0
+  .about
+    padding: 0 9.375%
+    &__header
+      color: #000000
+      font-size: 25px
+      font-weight: 700
+      line-height: 30px
+      margin-bottom: 31px
+    &__paragraph
+      color: #000000
+      font-size: 17px
+      font-weight: 700
+      line-height: 20px
+      white-space: pre-line
+    &__text
+      color: #444444
+      font-size: 15px
+      font-weight: 400
+      line-height: 30px
+      padding-right: 8px
+    &__sign
+      color: #000000
+      font-size: 17px
+      font-weight: 700
+      line-height: 24px
+      padding-bottom: 12px
+    &__link
+      color: #444444
+      font-weight: 400
+      line-height: 30px
+    &__buttons
+      list-style-type: none
+      padding: 0
+      width: 100%
+    &__button
+      display: inline-block
+    &__arrow
+      padding: 13px 38px
+      box-shadow: 0 0 0px 1px #ececec
+      max-width: 100%
+    &__button-link
+      display: table-row
+      &:hover
+        .about__arrow
+          opacity: .6
+      &:active
+        .about__arrow
+          opacity: .2
+  .contacts
+    padding: 0 9.375% 42px
+    &__header
+      color: #000000
+      font-size: 18px
+      font-weight: 700
+      line-height: 30px
+    &__item
+      display: flex
+      color: #444444
+      font-size: 15px
+      font-weight: 400
+      line-height: 30px
+      flex-wrap: wrap
+      padding-bottom: 15px
+    &-ghost
+      margin-top: 30px
+    &__info
+      padding-right: 32px
+    &__adres
+      white-space: pre-line
+    &__mail
+      display: inline
+      word-break: break-word
+      color: #444444
+      border-bottom: 1px solid #77d2c4
+      &:hover
+        color: #77d2c4
+      &:active
+        opacity: .2
+  .map
+    width: 100%
+    & iframe
+      width: 100%
+  .footer
+    background: #f1f1f1
+    display: flex
+    flex-direction: column
+    padding: 0 9.375%
+    &__icons
+      padding-top: 45px
+      padding-bottom: 20px
+      width: 100%
+      border-bottom: 1px solid #e5e5e5
+      text-align: center
+    &__icon
+      width: 28px
+      height: 35px
+      background-repeat: no-repeat
+      display: inline-block
+      padding-right: 39px
+    &__icon1
+      background: url("../img/insta.svg.svg")no-repeat
+      &:hover
+        background: url("../img/insta.svg_copy.png")no-repeat
+      &:active
+        opacity: .2
+    &__icon2
+      background: url("../img/fb.svg.svg")no-repeat
+      &:hover
+        background: url("../img/fb.svg_copy.png")no-repeat
+      &:active
+        opacity: .2
+    &__icon3
+      background: url("../img/twitter.svg.svg")no-repeat
+      &:hover
+        background: url("../img/twitter.svg_copy.png")no-repeat
+      &:active
+        opacity: .2
+    &__icon4
+      background: url("../img/htmlacademy.svg.png")no-repeat
+      padding: 35px 0 0
+    &__title
+      color: #000000
+      font-size: 19px
+      font-weight: 700
+      line-height: 18px
+      display: inline-block
+      padding: 0 30px 0 22px
+      margin: 10px 0
+    &__copyright
+      display: flex
+      flex-wrap: wrap
+      margin: 10px 0
+      &:active
+        opacity: .2
+  .order
+    &__modal
+      display: none
+      position: fixed
+      z-index: 100
+      left: 0
+      top: 0
+      overflow: hidden
+      background: rgba(black, .1)
+      width: 100%
+      height: 100%
+    &__content
+      position: fixed
+      top: 30%
+      left: 0
+      background-color: #ffffff
+      padding: 36px 9.375%
+    &__title
+      color: #000000
+      font-size: 25px
+      font-weight: 700
+      line-height: 30px
+      text-transform: uppercase
+      white-space: pre-line
+      text-align: center
+      margin: 0
+    &__header
+      color: #444444
+      font-size: 15px
+      font-weight: 400
+      line-height: 30px
+      text-align: center
+    &__sizes
+      margin: 0 auto
+      padding-bottom: 30px
+    &__size
+      color: #444444
+      font-size: 17px
+      font-weight: 700
+      line-height: 16px
+      text-transform: uppercase
+      display: inline-block
+      padding: 20px 33px
+      border: 2px solid rgba(#444444, .1)
+      margin-top: 5px
+      &:hover
+        border-color: #63d1bb
+    &__add
+      color: #ffffff
+      font-size: 17px
+      font-weight: 700
+      line-height: 16px
+      text-transform: uppercase
+      display: inline-block
+      padding: 16px 79px
+      background: #63d1bb
+
+
