@@ -15,5 +15,17 @@ $(document).ready(function () {
 				}
 			})
 	}());
+	$('.x_price_previous').replaceWith(function () {
+		let date = new Date();
+		date.setDate(date.getDate() + 2);
+		let options = {
+			day: 'numeric',
+			month: 'long',
+			year: 'numeric'
+		};
+		return date.toLocaleString('ru', options);
+	});
+
+
 
 });
