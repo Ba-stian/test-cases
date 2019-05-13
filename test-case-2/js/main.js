@@ -42,34 +42,34 @@ $(document).ready(function () {
 
 	setInterval(counter, 15000);
 
-    (function mask() {
-        let phone = $("[name='phone']");
-        let text = phone.attr('placeholder');
-        phone.focus(function (e) {
-            let target = $(e.target);
-            target.prop('placeholder', '(000) 000 0000');
-        });
-        phone.blur(function (e) {
-            let target = $(e.target);
-            target.prop('placeholder', text);
-            if (e.target.value.length <= 2) {
-                this.value = '';
-            }
-        });
-        phone.keypress(function (e) {
-            let char = String.fromCharCode(e.which);
-            if (!(/\d/.test(char)) && e.target.value > 11) {
-                e.preventDefault();
-            }
-            let matrix = "+7 (___) ___ ____";
-            let i = 0;
-            let def = matrix.replace(/\D/g, "");
-            let val = this.value.replace(/\D/g, "");
-            if (def.length >= val.length) val = def;
-            this.value = matrix.replace(/./g, function (a) {
-                return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
-            });
-        })
-    })();
+	(function mask() {
+		let phone = $("[name='phone']");
+		let text = phone.attr('placeholder');
+		phone.focus(function (e) {
+			let target = $(e.target);
+			target.prop('placeholder', '(000) 000 0000');
+		});
+		phone.blur(function (e) {
+			let target = $(e.target);
+			target.prop('placeholder', text);
+			if (e.target.value.length <= 2) {
+				this.value = '';
+			}
+		});
+		phone.keypress(function (e) {
+			let char = String.fromCharCode(e.which);
+			if (!(/\d/.test(char)) && e.target.value > 11) {
+				e.preventDefault();
+			}
+			let matrix = "+7 (___) ___ ____";
+			let i = 0;
+			let def = matrix.replace(/\D/g, "");
+			let val = this.value.replace(/\D/g, "");
+			if (def.length >= val.length) val = def;
+			this.value = matrix.replace(/./g, function (a) {
+				return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+			});
+		})
+	})();
 
 });
