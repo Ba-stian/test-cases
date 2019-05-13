@@ -26,6 +26,23 @@ $(document).ready(function () {
 		return date.toLocaleString('ru', options);
 	});
 
+	if (!localStorage.length) {
+		localStorage.setItem('qual', $('.lastpack').html());
+	}
+	let store = localStorage.getItem('qual');
+	$('.lastpack').html(store);
+
+	function counter() {
+		if (store > 7) {
+			store -= 1;
+			localStorage.setItem('qual', store);
+		}
+		$('.lastpack').html(store);
+	}
+
+	setInterval(counter, 15000);
+
+
 
 
 });
