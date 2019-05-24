@@ -72,4 +72,32 @@ $(document).ready(function () {
 		})
 	})();
 
+	(function popup() {
+
+		function open() {
+			$('html').on('mouseleave', function () {
+				$('.modal_mouse_out').css('display', 'block');
+
+			});
+		}
+
+		function close() {
+			$(window).click(function (e) {
+				let block = $('.mod');
+				if (!block.is(e.target)
+					&& block.has(e.target).length === 0) {
+					$('.modal_mouse_out').css('display', 'none');
+				}
+
+				$('html').off('mouseleave');
+			});
+			$('.close-mouse').click(function () {
+					$('.modal_mouse_out').css('display', 'none');
+				}
+			);
+		}
+
+		open();
+		close();
+	})();
 });
